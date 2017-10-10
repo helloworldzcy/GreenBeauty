@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Welcome to GreenBeatuty</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="GreenBeauty.css" rel="stylesheet">
+<link href="GreenBeauty_main.css" rel="stylesheet">
+<link href="GreenBeauty_product.css" rel="stylesheet">
+
+</head>
+<body>
+<header>
+	<ul class="header_nav">
+		<li class="Brand_Name"><span>Green</span>Beauty</li>
+		<li><form><input type="post" name="search" placeholder="search"><button>搜索</button></form></li>
+		<li class="header_nav_bar_sign header_nav_bar_sign1" onMouseOver="show1()" onMouseOut="hide1()">
+			<a href="#">账户</a>
+
+		</li>
+		<li class="header_nav_bar_sign header_nav_bar_sign2" onMouseOver="show2()" onMouseOut="hide2()">
+			<a href="#">心愿单</a>
+		</li>
+		<li class="header_nav_bar_sign header_nav_bar_sign3" onMouseOver="show3()" onMouseOut="hide3()">
+			<a href="#">购物车</a>			
+		</li>
+	</ul>
+	<div id="header_nav_bar_list1" style="display: none" onMouseOver="show1()" onMouseOut="hide1()">
+		<div class="trangile trangile1"></div>
+		<div class="header_nav_bar_list_inner">
+		<p><a href="#">我的账户</a></p>
+		<p><a href="">我的订单</a></p>
+		<p><a href="">我的评论</a></p>
+		<p><a href="">注册</a></p>
+		<p><a href="">帮助</a></p>		
+		</div>		
+	</div>
+	<div id="header_nav_bar_list2" style="display: none" onMouseOver="show2()" onMouseOut="hide2()">
+                         <div class="trangile trangile2"></div>	
+		<div class="header_nav_bar_list_inner">
+			<p><a href="#">我喜欢</a></p>
+			<p><a href="">预热</a></p>
+		</div>
+	</div>
+	<div id="header_nav_bar_list3" style="display: none" onMouseOver="show3()" onMouseOut="hide3()">
+	            <div class="trangile trangile3"></div>	
+		<div class="header_nav_bar_list_inner">
+		<p><a href="#">你的购物车是空的</a></p>
+	             </div>
+	</div>
+</header>
+<div class="main_nav">
+	<div class="main_nav_bar">
+		<ul class="main_nav_bar_list">
+			<li onMouseOver="choice(1)" onMouseOut="miss(1)"><a href="#">品牌</a></li>
+			<li  onMouseOver="choice(2)" onMouseOut="miss(2)"><a href="#">新品</a></li>
+			<li onMouseOver="choice(3)" onMouseOut="miss(3)"><a href="#">化妆品</a></li>
+			<li onMouseOver="choice(4)" onMouseOut="miss(4)"><a href="#">护肤</a></li>
+			<li onMouseOver="choice(5)" onMouseOut="miss(5)"><a href="#">男士专区</a></li>
+			<li onMouseOver="choice(6)" onMouseOut="miss(6)"><a href="#">香氛区</a></li>
+			<li><a href="#">关于我们</a></li>
+		</ul>
+	</div>
+	<div class="main_nav_bar_list_display" id="main_nav_bar_list_display1" style="display: none" onMouseOver="choice(1)" onMouseOut="miss(1)">
+		<div class="product_of_brands">
+		     <div id="products_of_brands_international" class="products_of_brands_list">
+		     	<p><a href="">国际品牌</a></p>
+		     	<ul class="products_of_brands_display">
+			<li><a href="">伊丽莎白</a></li>
+			<li><a href="">雅顿</a></li>
+			<li><a href="">兰蔻</a></li>
+			<li><a href="">科颜氏</a></li>
+			<li><a href="">雅诗兰黛</a></li>
+			<li><a href="">SK-II</a></li>
+			<li><a href="">欧舒丹</a></li>
+			<li><a href="">雪肌精</a></li>
+			<li><a href="">娇兰</a></li>
+			<li><a href="">贝玲妃</a></li>
+			<li><a href="">欧碧泉</a></li>
+			<li><a href="">娇韵诗</a></li>
+			<li><a href="">倩碧</a></li>
+		             </ul>
+		     </div>
+		    <div id="products_of_brands_china" class="products_of_brands_list">
+			<p><a href="">国内品牌</a></p>
+			<ul class="products_of_brands_display">
+			<li><a href="">御泥坊</a></li>
+			<li><a href="">百雀羚</a></li>
+			<li><a href="">美肤宝</a></li>
+			<li><a href="">阿芙</a></li>
+			<li><a href=""> 膜法世家</a></li>
+			<li><a href="">相宜草本</a></li>
+			<li><a href=""> 丸美</a></li>
+			<li><a href="">凡茜</a></li>
+			<li><a href="">佰草集</a></li>
+			<li><a href="">美加净</a></li>
+			<li><a href="">清妃</a></li>
+			<li><a href="">资生堂</a></li>
+			<li><a href="">欧莱雅</a></li>
+			<li><a href="">玉兰油</a></li>
+			<li><a href="">玫琳凯</a></li>
+			<li><a href="">小护士</a></li>
+			<li><a href="">雅芳</a></li>
+			<li><a href="">查看更多</a></li>
+		            </ul>
+		     </div>
+		     <div id="products_of_brands_western" class="products_of_brands_list">
+		     	<p><a href="">欧美品牌</a></p>
+		     	<ul class="products_of_brands_display">
+			<li><a href="">玫琳凯</a></li>
+			<li><a href="">兰蔻</a></li>
+			<li><a href="">雅漾</a></li>
+			<li><a href="">欧碧泉</a></li>
+			<li><a href="">美宝莲</a></li>
+			<li><a href="">妮维雅</a></li>
+			<li><a href="">悦木之源</a></li>
+			<li><a href="">海蓝之谜</a></li>
+			<li><a href="">魅可</a></li>
+			<li><a href="">契尔氏</a></li>
+			<li><a href="">水宝宝</a></li>
+		             </ul>
+		     </div>
+		     <div id="products_of_brands_japan" class="products_of_brands_list">
+		     	<p><a href="">日韩品牌</a></p>
+		     	<ul class="products_of_brands_display">
+			<li><a href="">悦诗风吟</a></li>
+			<li><a href="">高斯</a></li>
+			<li><a href="">欧珀莱</a></li>
+			<li><a href="">谜尚</a></li>
+			<li><a href="">泊美</a></li>
+			<li><a href="">菲诗小铺</a></li>
+			<li><a href="">洗颜专科</a></li>
+			<li><a href="">DHC</a></li>
+			<li><a href="">婵真</a></li>
+			<li><a href="">梦妆</a></li>
+		             </ul>
+		     </div>
+		     <div id="products_of_brands_others" class="products_of_brands_list">
+		     	<p><a href="">独家品牌</a></p>
+		     	<ul class="products_of_brands_display">
+			<li><a href="">魔法城堡</a></li>
+			<li><a href="">河马家</a></li>
+			<li><a href="">咪咪蜜</a></li>
+			<li><a href="">肌御坊</a></li>
+			<li><a href="">悦己美梵柏莎</a></li>
+			<li><a href="">优仪态</a></li>
+		             </ul>
+		     </div>
+		  </div>
+	</div>          
+	<div class="main_nav_bar_list_display" id="main_nav_bar_list_display2"style="display: none" onMouseOver="choice(2)" onMouseOut="miss(2)">
+		<div id="new_makeup">
+			<p><a href="">美妆新品</a></p>
+		            	<ul>		  
+			<li><a href="#">BB霜</a></li>
+			<li><a href="#">粉底液</a></li>
+			<li><a href="#">唇膏</a></li>
+			<li><a href="#">睫毛膏</a></li>
+			<li><a href="#">遮瑕膏</a></li>
+			<li><a href="#">隔离霜</a></li>
+			<li><a href="#">蜜粉</a></li>
+			<li><a href="#">高光</a></li>
+			<li><a href="#">修容</a></li>
+			<li><a href="#">彩妆套装</a></li>
+			<li><a href="#">其他</a></li>
+		           </ul>
+	            </div> 
+		<div id="new_skincare">
+			<p><a href="">护肤新品</a></p>
+		            <ul>
+			<li><a href="#">卸妆</a></li>
+			<li><a href="#">洁面</a></li>
+			<li><a href="#">化妆水</a></li>
+			<li><a href="#">面部精华</a></li>
+			<li><a href="#">乳液</a></li>
+			<li><a href="#">面膜</a></li>
+			<li><a href="#">防晒</a></li>
+			<li><a href="#">套装</a></li>
+                                      </ul>
+	            </div>
+		<div id="new_product_of_perfume">		
+		             <p><a href="#">香氛新品</a></p>	
+			<ul>
+			<li><a href="#">女士香水</a></li>
+			<li><a href="#">男士香水</a></li>
+			<li><a href="#">中性香水</a></li>
+			<li><a href="#">淡香水</a></li>
+			<li><a href="#">古龙水</a></li>
+			<li><a href="#">香精</a></li>
+			<li><a href="#">复方精油</a></li>
+		            </ul>
+		</div>
+	</div>
+	<div class="main_nav_bar_list_display" id="main_nav_bar_list_display3" style="display: none" onMouseOver="choice(3)" onMouseOut="miss(3)">
+		<div class="make_up_display_wrap">
+		<div class="make_up_display">
+			<p><a href="">卸妆</a></p>
+		             <ul>
+		             	<li><a href="">卸妆油</a></li>
+		             	<li><a href="">卸妆液</a></li>
+		             	<li><a href="">卸妆乳</a></li>
+		             	<li><a href="">卸妆霜</a></li>
+		             	<li><a href="">眼唇卸妆</a></li>
+			</ul>
+		</div>
+		<div class="make_up_display">
+			<p><a href="">隔离</a></p>
+			<ul>
+				<li><a href="">隔离乳霜</a></li>
+				<li><a href="">防晒乳霜</a></li>
+			</ul>
+		</div>
+		<div class="make_up_display">
+			<p><a href="">底妆</a></p>
+			<ul>
+				<li><a href="">BB霜/cc霜</a></li>
+				<li><a href="">粉底霜</a></li>
+				<li><a href="">粉底液</a></li>
+				<li><a href="">粉饼蜜粉/散粉</a></li>
+				<li><a href="">妆前乳/露</a></li>
+			</ul>
+		</div>
+		<div class="make_up_display">
+			<p><a href="">眉部</a></p>
+			<ul>
+				<li><a href="">眉毛</a></li>
+				<li><a href="">眉粉</a></li>
+				<li><a href="">眉膏</a></li>
+			</ul>			
+		</div>
+		<div class="make_up_display">
+			<p><a href="">眼部</a></p>
+			<ul>
+				<li><a href="">眼影</a></li>
+				<li><a href="">眼线笔</a></li>
+				<li><a href="">眼线膏</a></li>
+				<li><a href="">眼线液</a></li>
+			</ul>				
+		</div>
+		<div class="make_up_display">
+			<p><a href="">睫毛</a></p>
+			<ul>
+				<li><a href="">睫毛膏</a></li>
+				<li><a href="">睫毛增长液</a></li>
+
+			</ul>				
+		</div>
+		<div class="make_up_display">
+			<p><a href="">腮红</a></p>
+			<ul>
+				<li><a href="">腮红</a></li>
+
+			</ul>			
+		</div>
+		<div class="make_up_display">
+			<p><a href="">唇部</a></p>
+			<ul>
+				<li><a href="">唇彩/唇蜜</a></li>
+				<li><a href="">口红</a></li>
+				<li><a href="">唇线笔</a></li>
+			</ul>				
+		</div>
+		<div class="make_up_display">
+			<p><a href="">彩妆工具</a></p>
+			<ul>
+				<li><a href="">彩妆工具</a></li>
+
+			</ul>	
+		</div>
+		</div>	
+	</div>
+	<div class="main_nav_bar_list_display" id="main_nav_bar_list_display4" style="display: none" onMouseOver="choice(4)" onMouseOut="miss(4)">
+	<div class="skincare_display_wrap">
+		<div class="skincare_display">
+			<p><a href="">面膜</a></p>
+			<ul>
+				<li><a href="">面膜贴</a></li>
+				<li><a href="">免洗面膜</a></li>
+				<li><a href="">水洗面膜</a></li>
+				<li><a href="">拉撕面膜</a></li>
+			</ul>
+		</div>
+		<div class="skincare_display">
+			<p><a href="">洁面</a></p>
+			<ul>
+				<li><a href="">洁面乳</a></li>
+				<li><a href="">去角质</a></li>
+				<li><a href="">洁面膏</a></li>
+				<li><a href="">洁面啫喱</a></li>
+				<li><a href="">洁面摩丝</a></li>
+			</ul>
+		</div>
+		<div class="skincare_display">
+			<p><a href="">化妆水</a></p>
+			<ul>
+				<li><a href="">爽肤水</a></li>
+				<li><a href="">紧肤水</a></li>
+				<li><a href="">柔肤水</a></li>
+				<li><a href="">净化水</a></li>
+				<li><a href="">喷雾</a></li>
+			</ul>
+		</div>
+		<div class="skincare_display">
+			<p><a href="">精华</a></p>
+			<ul>
+				<li><a href="">精华液</a></li>
+				<li><a href="">精华乳</a></li>
+				<li><a href="">原液</a></li>
+				<li><a href="">肌底液</a></li>
+			</ul>
+		</div>
+		<div class="skincare_display">
+			<p><a href="">眼部护理</a></p>
+			<ul>
+				<li><a href="">眼霜</a></li>
+				<li><a href="">眼部精华</a></li>
+				<li><a href="">眼膜</a></li>
+				<li><a href="">眼部凝胶</a></li>
+			</ul>
+		</div>
+		<div class="skincare_display">
+			<p><a href="">唇部护理</a></p>
+			<ul>
+				<li><a href="">唇膏</a></li>
+				<li><a href="">唇膜</a></li>
+				<li><a href="">唇部精华</a></li>
+
+			</ul>
+		</div>
+		<div class="skincare_display">
+			<p><a href="">乳液/面霜</a></p>
+			<ul>
+				<li><a href="">面霜</a></li>
+				<li><a href="">按摩霜</a></li>
+				<li><a href="">面部啫喱</a></li>
+				<li><a href="">乳液</a></li>
+			</ul>
+		</div>
+		<div class="skincare_display">
+			<p><a href="">防晒</a></p>
+			<ul>
+				<li><a href="">防晒乳液</a></li>
+				<li><a href="">防晒霜</a></li>
+				<li><a href="">晒后修复</a></li>
+			</ul>
+		</div>
+		<div class="skincare_display">
+			<p><a href="">护肤工具</a></p>
+			<ul>
+				<li><a href="">化妆棉</a></li>
+				<li><a href="">洁面仪</a></li>
+				<li><a href="">纸膜</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div class="main_nav_bar_list_display" id="main_nav_bar_list_display5" style="display: none" onMouseOver="choice(5)" onMouseOut="miss(5)">
+		<div class="man_skincare_display_wrap">
+		<div class="man_skincare_display">
+			<p><a href="">男士护肤</a></p>
+			<ul>
+				<li><a href="">洁面</a></li>
+				<li><a href="">爽肤水</a></li>
+				<li><a href="">精华</a></li>
+				<li><a href="">乳液</a></li>
+				<li><a href="">面霜</a></li>
+				<li><a href="">眼霜</a></li>
+				<li><a href="">面膜</a></li>
+				<li><a href="">防晒</a></li>
+				<li><a href="">男士套装</a></li>
+			</ul>
+		</div>
+		<div class="man_skincare_display">
+			<p><a href="">男士洗护</a></p>
+			<ul>
+				<li><a href="">洗发水</a></li>
+				<li><a href="">漱口水</a></li>
+				<li><a href="">剃须用品</a></li>
+				<li><a href="">身体护理</a></li>
+			</ul>
+		</div>
+	</div>
+             </div>
+	<div class="main_nav_bar_list_display" id="main_nav_bar_list_display6" style="display: none" onMouseOver="choice(6)" onMouseOut="miss(6)">
+		<div class="perfume_display_wrap">
+		<div class="perfume_display">
+			<p><a href="">女士香水</a></p>
+			<ul>
+				<li><a href="">浓香</a></li>
+				<li><a href="">淡香</a></li>
+				<li><a href="">香膏</a></li>
+			</ul>
+		</div>
+		<div class="perfume_display">
+			<p><a href="">男士香水</a></p>
+			<ul>
+				<li><a href="">男士香水</a></li>
+
+			</ul>
+		</div>
+		<div class="perfume_display">
+			<p><a href="">中性香水</a></p>
+			<ul>
+				<li><a href="">中性香水</a></li>
+
+			</ul>
+		</div>
+		<div class="perfume_display">
+			<p><a href="">其他</a></p>
+			<ul>
+				<li><a href="">香水套装</a></li>
+				<li><a href="">Q版香水</a></li>
+			</ul>
+		</div>
+	             </div>
+	</div>
+ </div>
+<div class="wrap_picture" id='wrap'>
+              <ul id="pic">
+               <li><img src="image/1.jpg" alt=""></li>
+               <li><img src="image/2.jpg" alt=""></li>
+               <li><img src="image/3.jpg" alt=""></li>
+               <li><img src="image/4.jpg" alt=""></li>
+              </ul>
+              <ol id="life">
+             <li><span>Beautiful Life</span></li>
+             <li><span>Get Start</span></li>
+             <li><span>From now </span></li>
+             <li><span>Enjoy yourself</span></li>
+              </ol>
+ </div>
+<div class="products_part_wrap">
+	<div class="product_part">
+	<div class="part1">
+
+	<ul class="product_department">
+	<p>Departments</p>
+	            <li class="product_department_display"><a href="#" target="_blank"><img src="image/5.jpg"><span>彩妆</span></a></li>
+		<li class="product_department_display"><a href="#" target="_blank"><img src="image/6.jpg"><span>脸部护理</span></a></li>
+		<li class="product_department_display"><a href="#" target="_blank"><img src="image/7.jpg"><span>身体护理</span></a></li>
+		<li class="product_department_display"><a href="#" target="_blank"><img src="image/8.jpg"><span>香氛</span></a></li>
+		<li class="product_department_display"><a href="#" target="_blank"><img src="image/9.jpg"><span>男士专区</span></a></li>
+		<li class="product_department_display"><a href="#" target="_blank"><img src="image/10.jpg"><span>工具</span></a></li>	
+	</ul>	
+	</div>
+	<div class="part2 part2_add">
+		<p>Recommended brands</p>
+		<ul class="brand_recommend part2_add_list">
+			<li><span>OLAY</span><span><a href=""><img src="image/1.jpg"></a></span><span><i>Delicate life</i><i>Start</i></span></li>
+			<li><span>SK-II</span><span><a href=""><img src="image/1.jpg"></a></span><span><i>Delicate life</i><i>Start</i></span></li>
+			<li><span>DHC</span><span><a href=""><img src="image/1.jpg"></a></span><span><i>Delicate life</i><i>Start</i></span></li>
+			<li><span>兰蔻 </span><span><a href=""><img src="image/1.jpg"></a></span><span><i>Delicate life</i><i>Start</i></span></li>
+			<li><span>魅可 </span><span><a href=""><img src="image/1.jpg"></a></span><span><i>Delicate life</i><i>Start</i></span></li>
+			<li><span>雪花秀</span><span><a href=""><img src="image/1.jpg"></a></span><span><i>Delicate life</i><i>Start</i></span></li>
+		</ul>
+	</div>
+	<div class="part3 part2">
+		<p><a href="">必买清单</a></p>
+		<ul class="brand_recommend listing">
+			<li><span>口红</span><span><a href=""><img src="image/1.jpg"></a></span><span><i>Delicate life</i><i>Start</i></span></li>
+			<li><span>面膜 </span><span><a href=""><img src="image/1.jpg"></a></span><span><i>Delicate life</i><i>Start</i></span><span><i>Delicate life</i><i>Start</i></span></li>
+			<li><span>眼霜</span><span><a href=""><img src="image/1.jpg"></a></span><span><i>Delicate life</i><i>Start</i></span></li>
+			<li><span>洗面奶</span><span><a href=""><img src="image/1.jpg"></a></span><span><i>Delicate life</i><i>Start</i></span></li>
+			<li><span>香水</span><span><a href=""><img src="image/1.jpg"></a></span><span><i>Delicate life</i><i>Start</i></span></li>
+			<li><span>爽肤水</span><span><a href=""><img src="image/1.jpg"></a></span><span><i>Delicate life</i><i>Start</i></span></li>
+		</ul>		
+	</div>
+	</div>
+</div>
+<footer>
+	<div class="footer1">
+		<p class="Brand_Name"><span>Green</span>Beauty服务</p>
+		<div class="service_assurance">
+			<ul class="service_assurance_list">
+				<li><span>值得信赖美妆电商</span><span>四千万用户信赖</li>
+				<li><span>品牌防伪码</span><span>支持官网验真</li>
+				<li><span>30天无理由退货</span><span>只要不满意无理由退货</span></li>
+			</ul>
+		</div>
+		<div class="service_assurance_details">
+			<ul class="service_assurance_details_dispaly">
+				<li><a href="">服务保障</a></li>
+				<li><a href="">正品保证</a></li>
+				<li><a href="">30天无条件退货</a></li>
+				<li><a href="">7x24小时客服服务</a></li>
+			</ul>
+			<ul class="service_assurance_details_dispaly">
+				<li><a href="">使用帮助</a></li>
+				<li><a href="">常见问题</a></li>
+				<li><a href="">帮助中心</a></li>
+				<li><a href="">用户协议</a></li>
+			</ul>
+			<ul class="service_assurance_details_dispaly">
+				<li><a href="">支付方式</a></li>
+				<li><a href="">货到付款</a></li>
+				<li><a href="">在线支付</a></li>
+				<li><a href="">余额支付</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="footer2">
+		<div class="share">
+			<p>与其他客户分享你的看法</p>
+			<p><a href="">撰写用户评价</a></p>
+		</div>
+		<div class="more_confirmation">
+			<ul class="more_confirmation_display">
+				<li><a href="">商家入驻</a></li>
+				<li><a href="">获取更新</a></li>
+				<li><a href="">加入GB</a></li>
+				<li><a href="">品牌合作</a></li>
+				<li><a href="">网站联盟</a></li>
+				<li><a href="">商务合作</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	
+</footer>
+
+<script src="GreenBeauty.js"></script>
+</body>
+</html>

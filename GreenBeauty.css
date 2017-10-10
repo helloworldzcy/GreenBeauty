@@ -1,0 +1,329 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-10-04 16:33:38
+ * @version $Id$
+ */
+*{
+	margin:0;
+	padding:0;
+
+}
+body,html,.wrap{
+	padding:0;
+	margin:0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:#606060;
+}
+ .main_nav_bar_list_display p{
+ 	text-align: left;
+	font-size: 20px;
+	font-weight: 400px;
+	margin-bottom: 5px;
+}
+header{
+	width:100%;
+	height:75px;
+	position:fixed;
+	top:0;
+	left: 50%;
+	transform:translateX(-50%);
+	box-sizing: border-box;
+	color:#606060;
+	z-index: 1;
+	border-bottom: 1px solid #C0C0C0;
+}
+
+.header_nav{
+	width:100%;
+
+	
+}
+.header_nav li{
+
+	position:absolute;
+	text-decoration: none;
+
+}
+.Brand_Name{
+	left:20px;
+	top: 13px;
+	font-size:30px;
+}
+.Brand_Name span{
+	color:#93FFCD;
+}
+@media (min-width:640px){
+.header_nav li:nth-child(2){
+	left:220px;
+	right:195px;
+	top: 20px;
+}
+.header_nav li:nth-child(2) input{
+	box-sizing: border-box;
+	position: absolute;
+	height:30px;
+	width:100%;
+	z-index: 0;
+	left:0;
+	border:1px solid #C0C0C0;
+}
+.header_nav li:nth-child(2) button{
+	position: absolute;
+	z-index: 1;
+	right:0;
+	top:0;
+	width:50px;
+	height:30px;
+	border:0;
+	background-color: rgb(141,177,181);
+	color:white;
+	font-size: 13px;
+}
+.header_nav_bar_sign{
+	top: 50%;
+	transform:translateY(-50%);
+	font-size: 13px;
+}
+.header_nav_bar_sign1{
+	right:145px;
+}
+.header_nav_bar_sign2{
+	right:75px;
+}
+.header_nav_bar_sign3{
+	right:10px;
+}
+#header_nav_bar_list1,#header_nav_bar_list2,#header_nav_bar_list3{
+	position: absolute;
+	top:28px;
+	font-size:13px;
+	padding-top:22px;
+	z-index: 1;
+}
+#header_nav_bar_list1{
+	right:115px;
+}
+#header_nav_bar_list1 p:hover a,#header_nav_bar_list2 p:hover a,#header_nav_bar_list3 p:hover a{
+	color:#93FFCD;
+	opacity: 0.5;
+
+}                                                                 /**/
+#header_nav_bar_list2{
+	right:50px;
+}
+#header_nav_bar_list3{
+	right:5px;
+}
+.header_nav_bar_list_inner{
+	width:70px;
+	border:1px solid #EFEFEF;
+	padding:10px 10px;
+	text-align: center;
+	background-color: #EFEFEF;
+}
+.header_nav_bar_list_inner p{
+	height:25px;
+}
+.trangile{
+	width:0;
+	position: absolute;
+	top:6px;
+	left:40px;
+	border-width:9px;
+	border-color:transparent transparent #EFEFEF;
+	border-style: solid;
+}
+.trangile3{
+	left:50px;
+}
+}
+@media (max-width:640px){
+.Brand_Name{
+	left:50px;
+}
+.header_nav li:nth-child(2){
+	left:250px;
+	right:20px;
+	top: 20px;
+}
+.header_nav li:nth-child(2) input{
+	box-sizing: border-box;
+	position: absolute;
+	height:30px;
+	width:100%;
+	z-index: 0;
+	left:0;
+	border:1px solid #C0C0C0;
+}
+.header_nav li:nth-child(2) button{
+	position: absolute;
+	z-index: 1;
+	right:0;
+	top:0;
+	width:50px;
+	height:30px;
+	border:0;
+	background-color: rgb(141,177,181);
+	color:white;
+	font-size: 13px;
+}
+.header_nav_bar_sign{
+	display: none;
+}
+}
+
+@media (max-width:400px){
+header .header_nav li:nth-child(2){
+	display:none;
+}
+
+}
+
+
+footer{
+	position: relative;
+	top:75px;
+	width:100%;
+	height:200px;
+
+}
+.footer1{
+	width:100%;
+	background-color: #F2F2F2;
+}
+.footer1 p{
+	text-align: center;
+	padding:30px;
+}
+
+.service_assurance ul,.service_assurance_details,.more_confirmation ul{
+	margin:0 auto;
+	display: -webkit-flex;
+	-webkit-flex-direction:row;
+	-webkit-flex-wrap:wrap;
+	-webkit-justify-content:space-between;	
+	display:-moz-flex;
+	-moz-flex-direction:row;
+	-moz-flex-wrap:wrap;
+	-moz-justify-content:space-around;	
+
+}
+ .service_assurance ul li{
+	display: inline-block;
+	margin:5px auto;
+	text-align: center;
+	background-color:#F4F4F4;
+	border:1px solid #C0C0C0;
+	box-sizing: border-box;
+	padding:15px;
+	color:grey;
+	box-shadow: 3px 3px;
+}
+ .service_assurance ul li span{
+ 	display: block;
+
+ }
+  .service_assurance ul li span:nth-child(1){
+  	color:#404040;
+  	font-weight: 600;
+  	font-size: 18px;
+  	margin:5px;
+  }
+   .service_assurance ul li span:nth-child(2){
+   	font-size: 13px;
+  }
+@media(max-width:1000px) and (min-width:600px){
+.footer1 .service_assurance ul,.service_assurance_details{
+	width:100%;
+}
+.footer1 .service_assurance ul li, .service_assurance_details_dispaly{
+	width:32%;
+	font-size:15px;
+}
+}
+@media(max-width:600px){
+.footer1 .service_assurance ul{
+	width:85%;
+}
+.service_assurance_details{
+	width:100%;
+}
+.footer1 .service_assurance ul li{
+	width:65%;
+}
+.service_assurance_details_dispaly{
+	width:33%;
+}
+}
+@media(min-width:1000px){
+.footer1 .service_assurance ul,.service_assurance_details{
+	width:75%;
+}
+.footer1 .service_assurance ul li, .service_assurance_details_dispaly{
+	width:26%;
+}		
+}
+.service_assurance_details{
+	margin-top:20px;
+	padding-bottom: 30px;
+}
+.service_assurance_details_dispaly li{
+	width: 60%;
+	text-align: left;
+	margin:10px auto;
+	font-size: 12px;
+	transition:all 1s;
+}
+.service_assurance_details_dispaly li:hover{
+	transform:translate(40px,0);
+
+}
+.service_assurance_details_dispaly li:hover a{
+	color:pink;
+	
+}
+.service_assurance_details_dispaly li:nth-child(1){
+	font-size: 18px;
+}
+.service_assurance_details_dispaly li:nth-child(1) a{
+	color:black;
+}
+.footer2{
+	width:100%;
+	background-color:#404040;
+}
+.footer2 .share{
+	padding:20px;
+	text-align: center;
+	color:white;
+}
+.footer2 .share p:nth-child(2){
+	width:150px;
+	height:28px;
+	margin:20px auto;
+	border:1px solid rgb(141,177,181);
+	padding:6px;
+	background-color: rgb(141,177,181);
+}
+.footer2 .share p:nth-child(2) a,.more_confirmation ul  li a{
+	color: white;
+	font-size: 13px;
+}
+.more_confirmation{
+	box-sizing: border-box;
+	padding:15px;
+	background-color: #3A3A3A;
+}
+.more_confirmation ul {
+	width:90%;
+}
+.more_confirmation ul  li a:hover{
+	color:rgb(141,177,181);
+}
